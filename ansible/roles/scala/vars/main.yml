@@ -1,0 +1,15 @@
+# Choose Scala Version
+scala_version: "2.11.6"
+scala_version_name: "scala-{{scala_version}}"
+scala_archive_file: "{{scala_version_name}}.tgz"
+scala_download_url: "http://www.scala-lang.org/files/archive/{{scala_archive_file}}"
+# Scala Path
+scala_lib_path: "/usr/share/scala"
+scala_lib_path_target: "{{scala_lib_path}}/{{scala_version_name}}"
+scala_link_target: "/usr/bin"
+
+# SBT
+scala_sbt_url_rpm: "http://dl.bintray.com/sbt/rpm/sbt-{{scala_sbt_version}}.rpm"
+scala_sbt_url_zip: "http://dl.bintray.com/sbt/native-packages/sbt/{{scala_sbt_version}}/sbt-{{scala_sbt_version}}.zip"
+# https failed with ansible dl module for https://downloads.typesafe.com/ URLs
+scala_activator_url: "http://downloads.typesafe.com/typesafe-activator/{{scala_activator_version}}/typesafe-activator-{{scala_activator_version}}-minimal.zip"

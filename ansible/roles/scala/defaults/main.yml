@@ -1,0 +1,13 @@
+---
+scala_sbt_version: 0.13.8
+scala_sbt_tmp_deb: "/tmp/sbt.{{scala_sbt_version}}.deb"
+scala_sbt_tmp_rpm: "/tmp/sbt.{{scala_sbt_version}}.rpm"
+scala_sbt_tmp_zip: "/tmp/sbt.{{scala_sbt_version}}.zip"
+scala_sbt_install_dir: "/opt/sbt"
+scala_sbt_force_generic: false
+scala_bin_path: '/usr/local/bin'
+scala_environment: {} # use to set proxies
+scala_with_activator: true
+scala_activator_version: 1.3.5
+scala_activator_zip: "/tmp/activator.{{scala_activator_version}}.zip"
+scala_activator_install_dir: "/opt/activator"

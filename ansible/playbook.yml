@@ -5,5 +5,7 @@
    roles:
     - init
     - mariadb
-    - ruby
-    - nodejs
+    - java
+    - scala
+#    - ruby
+#    - nodejs
