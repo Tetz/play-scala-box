@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www":{"owner":"vagrant","group":"vagrant","guestpath":"/var/www","hostpath":"/Users/t/Code","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/t/vm/play-scala-box","disabled":false}}}
