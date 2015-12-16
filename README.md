@@ -1,7 +1,4 @@
-### System Info
-#### CentOS 7.0
-
-#### Setup
+##### Setup
 ```
 brew install ansible
 git clone git@github.com:Tetz/play-scala-box.git
