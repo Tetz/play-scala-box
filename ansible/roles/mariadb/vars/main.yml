@@ -1,0 +1,22 @@
+# roles/mariadb/vars/main.yml
+---
+
+mariadb_packages:
+  - mariadb
+  - mariadb-server
+  - MySQL-python
+
+mariadb_databases:
+  - myappdb
+  - myotherdb
+
+mariadb_root_password: root
+
+mariadb_users:
+  - name: appuser
+    password: apppass
+    priv: "myappdb.*:ALL,GRANT"
+  - name: otheruser
+    password: otherpass
+    priv: "myotherdb.*:ALL"
+

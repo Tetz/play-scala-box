@@ -1,0 +1,25 @@
+# file: roles/init/tasks/main.yml
+---
+
+- name: Disable Firewall Daemon
+  shell: systemctl disable firewalld
+  shell: systemctl stop firewalld
+
+- name: Install dependencies
+  sudo: yes
+  yum: pkg={{ item }} state=installed
+  with_items:
+    - git
+    - nano
+    - curl
+    - tar
+    - gcc
+    - make
+    - libffi-devel
+    - zlib-devel
+    - openssl-devel
+    - ruby-devel
+    - libxml2
+    - libxml2-devel
+    - libxslt
+    - libxslt-devel

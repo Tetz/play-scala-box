@@ -1,0 +1,9 @@
+# file: roles/playbook.yml
+---
+ - hosts: all
+
+   roles:
+    - init
+    - mariadb
+    - ruby
+    - nodejs
