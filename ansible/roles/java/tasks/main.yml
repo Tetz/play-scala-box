@@ -13,6 +13,6 @@
 - name: Clean up
   file: state=absent path={{java_archive}}
 
-- name: Install the OpenJDK Development Environment
-  sudo: yes
-  yum: name=java-devel state=latest
+#- name: Install the OpenJDK Development Environment
+#  sudo: yes
+#  yum: name=java-devel state=latest
