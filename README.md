@@ -1,4 +1,4 @@
-#### How to use play-scala-box
+## How to use play-scala-box
 
 ##### Synced folders
 Create a directory to sync your files to and from the guest machine
@@ -39,7 +39,8 @@ cd your_project
 activator run
 ```
 
-##### Open your browser and visit the following address
+##### First Web Application
+Open your browser and visit the following address
 ```
 192.168.7.7:9000
 ```
