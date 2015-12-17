@@ -1,4 +1,12 @@
-##### Setup
+#### How to use play-scala-box
+
+##### Synced folders
+Create a directory to sync your files to and from the guest machine
+```
+mkdir ~/Code
+```
+
+##### Setting up
 ```
 brew install ansible
 git clone git@github.com:Tetz/play-scala-box.git
@@ -23,9 +31,9 @@ mariadb_users:
     priv: "myotherdb.*:ALL"
 ```
 
+
 ##### Create first play project (It takes a while)
 ```
-cd /var/www/
 activator new your_project
 cd your_project
 activator run
@@ -33,7 +41,7 @@ activator run
 
 ##### Open your browser and visit the following address
 ```
-192.168.7.7
+192.168.7.7:9000
 ```
 or
 ```
