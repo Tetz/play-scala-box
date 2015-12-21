@@ -23,8 +23,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       ansible.sudo = true
   end
 
-  # Create writable sessions for login
-  config.vm.synced_folder "~/Code", "/var/www", owner: "vagrant", group: "vagrant"
+  # Create writable sessions for login (Shared folder os NFS)
+  #config.vm.synced_folder "~/Code", "/var/www", owner: "vagrant", group: "vagrant"
+  config.vm.synced_folder "~/Code", "/var/www", type: "nfs"
 
   # Set Default Language
   config.vm.provision "shell",

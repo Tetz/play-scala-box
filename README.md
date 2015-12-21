@@ -32,14 +32,14 @@ mariadb_users:
 ```
 
 
-##### Create first play project (It takes a while)
+##### Web Application
+Create first play project (It takes a while)
 ```
 activator new your_project
 cd your_project
 activator run
 ```
 
-##### First Web Application
 Open your browser and visit the following address
 ```
 192.168.7.7:9000

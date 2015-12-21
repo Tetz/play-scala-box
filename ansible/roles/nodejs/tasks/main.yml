@@ -6,3 +6,9 @@
 
 - name: Ensure Node.js and npm are installed.
   yum: "name=nodejs state=present enablerepo='epel,nodesource'"
+
+- name: Make sure the latest npm is installed
+  command: npm install -g npm
+
+- name: Install Yeoman, Grunt, Bower, AngularJS Generator
+  command: npm install -g yo grunt-cli bower generator-angular
